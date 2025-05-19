@@ -1,0 +1,10 @@
+FastMenu é um aplicativo que visa aumentar a velocidade com a qual o usuario escolhe um produto de um restaurante situado em uma determinada praça de alimentação.
+
+Como utilizar o programa:
+    Deve ser executado apenas arquivos que iniciam com o prefixo "Main" (MainUsuario, MainAdministrador e MainSuperUsuario).
+    Arquivos com prefixo "Funcoes" Servem apenas para guardar a função de cada Main respectivo.
+OBS:(Só é possivel visualizar um restaurante que contenha pratos)
+Funções de cada Main: 
+    Usuario-> É utilizado apenas para visualizar a lista de restaurantes disponíveis e escolher um cardápio específico.
+    Administrador-> É utilizado para modificar cardápios, tais alterações como (visualizar, cadastrar, remover e alterar) pratos da sua companhia.
+    SuperUsuario-> É utilizado para (visualizar, cadastrar, remover e alterar) Restaurantes, cardápios e Administradores. Consegue visualizar a lista de pratos existentes.

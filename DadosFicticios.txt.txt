@@ -1,0 +1,31 @@
+//Dados Ficticios disponibilizados para testar as funcionalidades do FastMenu:
+
+INSERT INTO Cardapio (ID) VALUES (1);
+INSERT INTO Cardapio (ID) VALUES (2);
+INSERT INTO Cardapio (ID) VALUES (3);
+INSERT INTO Cardapio (ID) VALUES (4);
+
+INSERT INTO Restaurante (CNPJ, Nome, Telefone, Descricao)
+VALUES
+('12.345.678/0001-90', 'Sabor Brasileiro', '(41)99999-1234', 'Restaurante especializado em comida típica brasileira.'),
+('23.456.789/0002-01', 'Pizza Suprema', '(41)98888-5678', 'Pizzaria com ingredientes frescos e receitas exclusivas.'),
+('34.567.890/0003-12', 'Sushi Zen', '(41)97777-9101', 'O melhor da culinária japonesa em um ambiente acolhedor.'),
+('45.678.901/0004-23', 'Veggie Delights', '(41)96666-1123', 'Opções veganas e vegetarianas que encantam todos os gostos.');
+
+INSERT INTO Prato (Restaurante_CNPJ, Cardapio_ID, Nome, Preco, Descricao)
+VALUES
+('12.345.678/0001-90', 1, 'Feijoada Tradicional', 25.50, 'Clássica feijoada brasileira com acompanhamentos.'),
+('12.345.678/0001-90', 1, 'Moqueca de Peixe', 29.90, 'Moqueca baiana com peixe fresco e temperos locais.'),
+('23.456.789/0002-01', 2, 'Pizza Margherita', 38.00, 'Pizza com molho de tomate, mussarela e manjericão.'),
+('23.456.789/0002-01', 2, 'Pizza Calabresa', 42.00, 'Pizza com calabresa fatiada, cebola e azeitonas.'),
+('34.567.890/0003-12', 3, 'Sushi Especial', 48.50, 'Combinação especial de sushis selecionados.'),
+('34.567.890/0003-12', 3, 'Yakisoba Tradicional', 32.00, 'Macarrão com legumes e carne ao molho oriental.'),
+('45.678.901/0004-23', 4, 'Veggie Burger', 22.90, 'Hambúrguer vegano com pão integral e acompanhamentos.'),
+('45.678.901/0004-23', 4, 'Salada Gourmet', 18.50, 'Salada com ingredientes frescos e molho especial.');
+
+INSERT INTO Administrador (CPF, Nome, Restaurante_CNPJ, Senha, Cardapio_ID)
+VALUES
+('123.456.789-10', 'João Silva', '12.345.678/0001-90', 'adm12345', 1),
+('234.567.890-11', 'Maria Oliveira', '23.456.789/0002-01', 'pizza987', 2),
+('345.678.901-12', 'Akira Tanaka', '34.567.890/0003-12', 'sushi555', 3),
+('456.789.012-13', 'Clara Souza', '45.678.901/0004-23', 'veggie123', 4);
